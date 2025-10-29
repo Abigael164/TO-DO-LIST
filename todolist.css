@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+   display: flex; 
+    flex-wrap: nowrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container{
+    background:linear-gradient(to left,brown,coral,chocolate,maroon);
+    min-height: 100vh;
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+
+   
+}
+input#item{
+    padding: 15px;
+    padding-right: 200px;
+    border-radius: 20px;
+    font-size: 3vh;
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: white;
+    
+}
+button{
+    padding: 15px;
+    font-size: 3vh;
+    position: relative;
+    right: 7vh;
+    border-radius: 20px;
+    background-color: orangered;
+    border: none;
+    outline: none;
+}
+ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 8px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2.8vh;
+    font-weight: 600;
+    margin-left: 400px;
+
+}
+ul li::before{
+    content: '';
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: url(greyish.jpg);
+    background-position: center;
+    position: relative;
+    height: 21px;
+    width: 21px;
+    left: -10px;
+    border-radius: 50%;
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(green.jpg);
+}
+ul li span{
+    position: absolute;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-right: 450px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+   
